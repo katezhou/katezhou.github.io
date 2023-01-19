@@ -274,6 +274,7 @@ h1 {
 body {
     margin: 30px auto;
     width: 80%;
+    padding-bottom: 20px;
 }
 	
 .grid-container {
