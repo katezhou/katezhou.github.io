@@ -1,245 +1,419 @@
 <!DOCTYPE html>
-<html>
-<title>Kaitlyn Zhou</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
+<html lang="en">
+<head>
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Kaitlyn Zhou | Home</title>
+  <meta name="description" content="Kaitlyn Zhou">
+  <meta name="author" content="Kaitlyn Zhou">
+  <meta property="og:title" content="Kaitlyn Zhou" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cs.stanford.edu/~katezhou" />
+  <meta property="og:site_name" content="Kaitlyn Zhou" />
+  <link rel="canonical" href="https://cs.stanford.edu/~katezhou" />
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image:url('cover_photo.jpeg');
-  min-height: 100%;
-}
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=https://cs.stanford.edu/~katezhou//libs/external/skeleton/normalize.css>
+  <link rel="stylesheet" href=https://cs.stanford.edu/~katezhou//libs/external/skeleton/skeleton.css>
+  <link rel="stylesheet" href=https://cs.stanford.edu/~katezhou//libs/custom/my_css.css>
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src=https://cs.stanford.edu/~katezhou//libs/external/jquery-3.1.1.min.js></script>
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
+  <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=https://cs.stanford.edu/~katezhou//libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
 
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+  <!-- Academicons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=https://cs.stanford.edu/~katezhou//libs/external/academicons-1.8.6/css/academicons.min.css>
 
-/* relevant styles */
-.img__wrap {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
+  <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=https://cs.stanford.edu/~katezhou//libs/external/skeleton_tabs/skeleton-tabs.css>
+  <script src=https://cs.stanford.edu/~katezhou//libs/external/skeleton_tabs/skeleton-tabs.js></script>
 
-.img__description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #f0f0f0;
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
+  <!-- Timeline
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
-}
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="stylesheet" href=https://cs.stanford.edu/~katezhou//libs/external/github-prettify-theme.css>-->
+  <script src=https://cs.stanford.edu/~katezhou//libs/custom/my_js.js></script>
 
-.img__wrap:hover .img__description {
-  visibility: visible;
-  opacity: .5;
-}
-.img {
-  border-radius: 50%;
-}
-    
-</style>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+</head>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="https://www.linkedin.com/in/zhoukaitlyn/" class="w3-bar-item w3-button">LINKEDIN</a>
-    <a href="cv.pdf" class="w3-bar-item w3-button">CV</a>
-    <a href="mailto:katezhou@stanford.edu" class="w3-bar-item w3-button">EMAIL</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <section class="header">
+      <div class="row">
+        <div class="three columns">
+          <a href="https://cs.stanford.edu/~katezhou/"><img class="u-max-full-width" src='assets/profile-pics/profile_picture.png'></a>
+        </div>
+        <div class="nine columns main-description">
+            <h1>Kaitlyn Zhou</h1>
+            <p>PhD Student, Stanford University</p>
+            <p>Incoming Assistant Professor at Cornell Information Science</p>
+	    <p>katezhou@stanford.edu</p>
+            <p>
+              <span onclick="window.open('https://bsky.app/profile/kaitlynzhou.bsky.social')" style="cursor: pointer">
+                <i class="fa fa-twitter"></i>
+              </span>
+
+              <span onclick="window.open('https://www.linkedin.com/in/zhoukaitlyn')" style="cursor: pointer">
+                <i class="fa fa-linkedin-square"></i>
+              </span>
+
+              <span onclick="window.open('https://scholar.google.com/citations?user=SQAK2mwAAAAJ&hl=en')" style="cursor: pointer">
+                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+              </span>
+            </p>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  <p>
+I research the dynamics of <b>human interaction with language models (human-LM interaction)</b>, focusing on how generated language shapes human decision-making, reliance, and trust. My research 1) identifies model <b>overconfidence as a key risk</b> of human-LM interactions [<a href="assets/publications/2023_navigating_the_grey/paper.pdf" target="_blank">EMNLP'23</a>, <a href="assets/publications/2024_relying_on_the_unreliable/paper.pdf" target="_blank">ACL'24</a>], 2) builds <b>context-aware evaluation frameworks</b> for emergent human-LM interactions [<a href="assets/publications/2024_relai/paper.pdf" target="_blank">NAACL'25</a>], and 3) <b>reimagines </b>human-LM interactions for historically marginalized user groups via <b>human-centered task ideation</b>.
+  </p>
+
+  <p>
+  I'm an sixth-year Ph.D. student in Computer Science at Stanford University, advised by <a href="https://web.stanford.edu/~jurafsky/" target="_blank">Dan Jurafsky</a>.
+  Prior to coming to Stanford, I served on the University of Washington <a href="https://www.washington.edu/regents/officers/all-regents/" target="_blank">Board of Regents</a> as appointed by Governor Jay Inslee.
+  I studied Computer Science and Human Centered Design and Engineering at the University of Washington (B.Sc., B.Se., M.S.) where I won the School of Engineering Dean's Medal of Excellence.
+  I've been fortunate to spend summer doing research at Microsoft Research FATE (hosted by Alexandra Olteanu and Su Lin Blodgett) and Allen Institute for AI (hosted by Maarten Sap, Jena Hwang, and Xiang Ren).
+  </p>
+<b>I will be joining Cornell Information Science as an Assistant Professor in August 2026!</b> I will be recruiting students in natural language processing and human-computer interactions! If you're interested, please reach out!
+</div>
+
+<!-- ========== Recent News ========== -->
+<div class="docs-section" id="news">
+  <h4>Recent News</h4>
+	<ul>
+  	<li><b>April 2025:</b> Our paper on human-LLM reliance (<a href="https://arxiv.org/pdf/2407.07950" target="_blank">REL-A.I.</a>) won <b>Best Paper Runner-Up</b> at <a href="https://2025.naacl.org/blog/best-papers/" target="_blank">NAACL 2025</a>!</li>
+	<li><b>February 2025:</b> Two papers (<a href="https://arxiv.org/pdf/2407.07950" target="_blank">REL-A.I.</a> and <a  href="https://arxiv.org/pdf/2502.05704" target="_blank">Rethinking Word Similarity</a>) accepted to NAACL as oral presentations!</li>
+  	<li><b>February 2025:</b> Invited talk at Northwestern University</li>
+  	<li><b>February 2025:</b> Invited talk at University of Washington</li>
+	<li><b>February 2025:</b> Invited Talk at TogetherAI</li>
+	<li><b>January 2025:</b> Invited Talk at Cornell University</li>
+	<li><b>October 2024:</b> EECS Rising Stars at MIT</li>
+        <li><b>October 2024:</b> Invited Talk at MIT</li>
+        <li><b>October 2024:</b> Invited Talk at Northeastern University</li>
+
+	</ul>
 
 </div>
 
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Kaitlyn Zhou</h3>
-      <p style='text-align:center'>katezhou@stanford.edu</p>
+  <p>Most recent publications on <a href="https://scholar.google.com/citations?user=SQAK2mwAAAAJ&hl=en" target="_blank">Google Scholar</a>.<br/>
+  </p>
 
-    <div class="w3-row-padding w3-center w3-section"></div>    
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>
+  </ul>
 
-    <div class="w3-row"></div>
+  <div class="tab-content">
+    <div class="tab-pane active" id="papers-selected">
+      
+      
+        <div class="paper">
+          <p class="title"><b>Rel-A.I.: An Interaction-Centered Approach To Measuring Human-LM Reliance</b></p>
+          <p><b>Kaitlyn Zhou</b>, Jena D. Hwang, Xiang Ren, Nouha Dziri, Dan Jurafsky, and Maarten Sap</p>
+          <p><i>NAACL'25 (Best Paper Runner-Up): North American Chapter of the Association for Computational Linguistics. 2025.</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/pdf/2407.07950" target="_blank">Paper</a>
+          </div>
+        </div>
+      
 
-    <div class="w3-col m6 w3-left-align w3-padding-large">
-	<p>Welcome! My name is Kaitlyn Zhou (she/her) and I'm a Ph.D. student at Stanford University. I am advised by Professor Dan Jurafsky. My recent work has focused on how language models express uncertainty, how humans interpret these LM-generated responses, and the potential harms and risks that may arise from this interaction. I have previously interned at Allen Institute for AI with Maarten Sap, Xiang Ren, and Jena Hwang and Microsoft Research FATE where I worked with Alexandra Olteanu and Su Lin Blodgett. I completed my Bachelor's and Master's at the University of Washington and worked with Kate Starbird and Emma Spiro.</p>
-    
-    <div class="w3-row-padding w3-center w3-section"></div>    
-        
+        <div class="paper">
+          <p class="title"><b>Relying on the Unreliable: The Impact of Language Models' Reluctance to Express Uncertainty</b></p>
+          <p><b>Kaitlyn Zhou</b>, Jena D. Hwang, Xiang Ren, and Maarten Sap</p>
+          <p><i>ACL'24: Annual Meeting of the Association for Computational Linguistics. 2024.</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2024_relying_on_the_unreliable/paper.pdf" target="_blank">Paper</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Navigating the Grey Area: Expressions of Overconfidence and Uncertainty in Language Models</b></p>
+          <p><b>Kaitlyn Zhou</b>, Dan Jurafsky, and Tatsunori Hashimoto</p>
+          <p><i>EMNLP'23: Empirical Methods in Natural Language Processing. 2023.</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2023_navigating_the_grey/paper.pdf" target="_blank">Paper</a>
+     	   </div>
+	</div>       
+      
+        <div class="paper">
+          <p class="title"><b>Spotlight Tweets: A Lens for Exploring Attention Dynamics within Online Sensemaking during Crisis Events</b></p>
+          <p><b>Kaitlyn Zhou</b>, Tom Wilson, Kate Starbird, and Emma S. Spiro</p>
+          <p><i>TSC'23: Transactions of Social Computing (Journal). 2023</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2023_spotlight_tweets/paper.pdf" target="_blank">Paper</a>
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Deconstructing NLG Evaluation: Evaluation Practices, Assumptions, and Their Implications</b></p>
+          <p><b>Kaitlyn Zhou</b>, Su Lin Blodgett, Adam Trischler, Hal Daumé III, Kaheer Suleman, Alexandra Olteanu.</p>
+          <p><i>NAACL'22: North American Chapter of the Association for Computational Linguistics. 2022</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2022_deconstructing_nlg_evaluation/paper.pdf" target="_blank">Paper</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>The Disagreement Deconvolution: Bringing Machine Learning Performance Metrics In Line With Reality.</b></p>
+          <p>Mitchell L. Gordon, <b>Kaitlyn Zhou</b>, Kayur Patel, Tatsunori Hashimoto, and Michael S. Bernstein.</p>
+          <p><i>CHI'21. ACM Conference on Human Factors in Computing Systems. 2021</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2021_disagreement_deconvolution/paper.pdf" target="_blank">Paper</a>
+          </div>
+        </div>
+      
     </div>
-    
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="profile_picture.png" alt="Profile" width="250" height="375">
+
+    <div class="tab-pane" id="papers-all">
+      
+          <div class="paper">
+          <p class="title"><b>Rel-A.I.: An Interaction-Centered Approach To Measuring Human-LM Reliance</b></p>
+          <p><b>Kaitlyn Zhou</b>, Jena D. Hwang, Xiang Ren, Nouha Dziri, Dan Jurafsky, and Maarten Sap</p>
+          <p><i>NAACL'25 (Best Paper Runner-Up): North American Chapter of the Association for Computational Linguistics. 2025.</i></p>
+           <div class="paper-buttons">
+
+              <a class="button" href="https://arxiv.org/pdf/2407.07950" target="_blank">Paper</a>
+          </div>
+        </div>
+
+        <div class="paper">
+          <p class="title"><b>Rethinking Word Similarity: Semantic Similarity through Classification Confusion</b></p>
+          <p><b>Kaitlyn Zhou</b>, Haishan Gao, Sarah Chen, Dan Edelstein, Dan Jurafsky, Chen Shani</p>
+          <p><i>NAACL'25 (Oral) North American Chapter of the Association for Computational Linguistics. 2025.</i></p>
+           <div class="paper-buttons">
+
+              <a class="button" href="https://arxiv.org/pdf/2502.05704" target="_blank">Paper</a>
+          </div>
+        </div> 
+
+        <div class="paper">
+          <p class="title"><b>Relying on the Unreliable: The Impact of Language Models' Reluctance to Express Uncertainty</b></p>
+          <p><b>Kaitlyn Zhou</b>, Jena D. Hwang, Xiang Ren, and Maarten Sap</p>
+          <p><i>ACL'24: Annual Meeting of the Association for Computational Linguistics. 2024.</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2024_relying_on_the_unreliable/paper.pdf" target="_blank">Paper</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Navigating the Grey Area: Expressions of Overconfidence and Uncertainty in Language Models</b></p>
+          <p><b>Kaitlyn Zhou</b>, Dan Jurafsky, and Tatsunori Hashimoto</p>
+          <p><i>EMNLP'23: Empirical Methods in Natural Language Processing. 2023.</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2023_navigating_the_grey/paper.pdf" target="_blank">Paper</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Spotlight Tweets: A Lens for Exploring Attention Dynamics within Online Sensemaking during Crisis Events</b></p>
+          <p><b>Kaitlyn Zhou</b>, Tom Wilson, Kate Starbird, and Emma S. Spiro</p>
+          <p><i>TSC'23: Transactions of Social Computing (Journal). 2023</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2023_spotlight_tweets/paper.pdf" target="_blank">Paper</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Deconstructing NLG Evaluation: Evaluation Practices, Assumptions, and Their Implications</b></p>
+          <p><b>Kaitlyn Zhou</b>, Su Lin Blodgett, Adam Trischler, Hal Daumé III, Kaheer Suleman, Alexandra Olteanu.</p>
+          <p><i>NAACL'22: North American Chapter of the Association for Computational Linguistics. 2022</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2022_deconstructing_nlg_evaluation/paper.pdf" target="_blank">Paper</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Problems with Cosine as a Measure of Embedding Similarity for High Frequency Words</b></p>
+          <p><b>Kaitlyn Zhou</b>, Kawin Ethayarajh, Dallas Card, Dan Jurafsky</p>
+          <p><i>ACL'22: Annual Meeting of the Association for Computational Linguistics. 2022.</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2022_problems_with_cosine/paper.pdf" target="_blank">Paper</a>
+            
+	  </div>
+	</div>
+	<div class="paper">
+          <p class="title"><b>Richer Countries and Richer Representations</b></p>
+          <p><b>Kaitlyn Zhou</b>, Kawin Ethayarajh, Dan Jurafsky</p>
+          <p><i>ACL'22: Annual Meeting of the Association for Computational Linguistics (Findings). 2022.</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2022_richer_countries/paper.pdf" target="_blank">Paper</a>
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>On the Opportunities and Risks of Foundation Models</b></p>
+          <p>Rishi Bommasani, Drew A. Hudson ... Kaitlyn Zhou , Percy Liang et al.</p>
+          <p><i>Preprint</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/opportunities_and_risks/paper.pdf" target="_blank">Paper</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>The Disagreement Deconvolution: Bringing Machine Learning Performance Metrics In Line With Reality.</b></p>
+          <p>Mitchell L. Gordon, <b>Kaitlyn Zhou</b>, Kayur Patel, Tatsunori Hashimoto, and Michael S. Bernstein.</p>
+          <p><i>CHI'21. ACM Conference on Human Factors in Computing Systems. 2021</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2021_disagreement_deconvolution/paper.pdf" target="_blank">Paper</a>
+          </div>
+	</div>
+      
+        <div class="paper">
+          <p class="title"><b>Assembling strategic narratives: Information operations as collaborative work within an online community.</b></p>
+          <p>Tom Wilson, <b>Kaitlyn Zhou</b>, and Kate Starbird</p>
+          <p><i>CSCW'2018: ACM SIGCHI Conference on Computer-Supported Cooperative Work & Social Computing</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2018_assembling_strategic_narratives/paper.pdf" target="_blank">Paper</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Centralized, parallel, and distributed information processing during collective sensemaking.</b></p>
+          <p>Peter Kraft, <b>Kaitlyn Zhou</b>, Isabelle Edwards, Kate Starbird, and Emma S. Spiro</p>
+          <p><i>CHI'17. ACM Conference on Human Factors in Computing Systems. 2017</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://cs.stanford.edu/~katezhou/assets/publications/2017_centralized_parallel_distributed/paper.pdf" target="_blank">Paper</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+<div class="docs-section" id="projects">
+  <h4>Projects</h4>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
+    <li><div class="button" data-ref="#projects-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="projects-selected">
+      
+      
+    </div>
+
+    <div class="tab-pane" id="projects-all">
+      
+    </div>
+  </div>
+
+</div>
+-->
+
+<!-- ========== RESUME ========== -->
+<div class="docs-section" id="resume">
+  <h4>Vitæ</h4>
+
+  <p>Full Resume in <a href=https://cs.stanford.edu/~katezhou/assets/cv/cv_web.pdf target="_blank">PDF</a>.</p>
+
+</div>
+
+<div class="docs-section" id="template">
+  <h4>Website Design</h4>
+  Website design from Martin Saveski at this <a href="https://github.com/msaveski/www_personal" target="_blank">link</a>.
+
+</div>  
+
+
+    <div class="footer">
+      <div class="row">
+        <div class="four columns">
+          Kaitlyn Zhou
+        </div>
+        <div class="four columns">
+          katezhou@stanford.edu
+        </div>
+        <div class="four columns">
+          <span onclick="window.open('https://bsky.app/profile/kaitlynzhou.bsky.social')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://www.linkedin.com/in/kaitlynzhou')" style="cursor: pointer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://scholar.google.com/citations?user=SQAK2mwAAAAJ&hl=en')" style="cursor: pointer">
+            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
     </div>
 
   </div>
 
-<div class="w3-content w3-container w3-padding-60" id="about">
-  <h3 class="w3-left-align">PUBLICATIONS</h3>
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  <div class="w3-row-padding w3-center w3-section"></div>
-    <p> <b> Rel-A.I.: An Interaction-Centered Approach To Measuring Human-LM Reliance</b> </p>
-    <p> Preprint</p>
-    <p> <b> Kaitlyn Zhou </b>, Jena D. Hwang, Xiang Ren, Nouha Dziri, Dan Jurafsky, and Maarten Sap <a href="relai_framework.pdf" title="Rel-A.I.: An Interaction-Centered Approach To Measuring Human-LM Reliance
-">PDF</a> </p>
+  ga('create', 'G-JVLM35P8JF', 'auto');
+  ga('send', 'pageview');
 
-  <div class="w3-row-padding w3-center w3-section"></div>
-    <p> <b> Relying on the Unreliable: The Impact of Language Models' Reluctance to Express Uncertainty </b> </p>
-    <p> ACL 2024 </p>
-    <p> <b> Kaitlyn Zhou </b>, Jena D. Hwang, Xiang Ren, Maarten Sap <a href="https://arxiv.org/abs/2401.06730">Link</a> </p> 
-
-  <div class="w3-row-padding w3-center w3-section"></div>
-    <p> <b> Navigating the Grey Area: Expressions of Overconfidence and Uncertainty in Language Models </b> </p>
-    <p>EMNLP 2023 (Oral)</p>
-    <p> <b> Kaitlyn Zhou </b>, Dan Jurafsky, Tatsunori Hashimoto <a href="https://arxiv.org/abs/2302.13439">Link</a> </p>
-
-
-  <div class="w3-row-padding w3-center w3-section"></div>
-
-    <p> <b> Spotlight Tweets: A Lens for Exploring Attention Dynamics within Online Sensemaking during Crisis Events </b> </p>
-    <p> Transactions of Social Computing (Journal) </p>
-    <p> <b> Kaitlyn Zhou </b>, Tom Wilson, Kate Starbird, Emma S. Spiro <a href="https://dl.acm.org/doi/10.1145/3577213">Link</a> </p>
-
-
-  <div class="w3-row-padding w3-center w3-section"></div>
-    <p> <b> Deconstructing NLG Evaluation: Evaluation Practices, Assumptions, and Their Implications </b> </p>
-    <p> NAACL 2022 (Oral)</p>
-    <p> <b> Kaitlyn Zhou </b>, Su Lin Blodgett, Adam Trischler, Hal Daumé III, Kaheer Suleman, Alexandra Olteanu. <a href="nlg_evaluation.pdf" title="Deconstructing NLG Evaluation: Evaluation Practices, Assumptions, and Their Implications">PDF</a> </p>
-
-  <div class="w3-row-padding w3-center w3-section"></div>
-   
-    <p> <b> Problems with Cosine as a Measure of Embedding Similarity for High Frequency Words </b> </p>
-    <p> ACL 2022 </p>
-    <p> <b> Kaitlyn Zhou </b>, Kawin Ethayarajh, Dallas Card, Dan Jurafsky <a href="problems_cosine.pdf" title="Problems with Cosine as a Measure of Embedding Similarity for High Frequency Words">PDF</a> </p>
-
-
-  <div class="w3-row-padding w3-center w3-section"></div>
-   
-    <p> <b> Richer Countries and Richer Representations </b> </p>
-    <p> ACL 2022 - Findings </p>
-    <p> <b> Kaitlyn Zhou </b>, Kawin Ethayarajh, Dan Jurafsky <a href="richer_countries.pdf">PDF</a> </p>
-
-  <div class="w3-row-padding w3-center w3-section"></div>
-   
-    <p> <b> On the Opportunities and Risks of Foundation Models </b> </p>
-    <p> arXiv:2108.07258, 2021. </p>
-    <p> Rishi Bommasani,  Drew A. Hudson ... <b> Kaitlyn Zhou </b>, Percy Liang et al. <a href="https://arxiv.org/pdf/2108.07258.pdf">PDF</a> </p>
-
-  <div class="w3-row-padding w3-center w3-section"></div>
-
-    <p> <b> The Disagreement Deconvolution: Bringing Machine Learning Performance Metrics In Line With Reality. </b> </p>
-    <p> CHI 2021 </p>
-    <p>Mitchell L. Gordon, <b>Kaitlyn Zhou</b>, Kayur Patel, Tatsunori Hashimoto, Michael S. Bernstein. <a href="chi2021.pdf">PDF</a> </p>
-  <div class="w3-row-padding w3-center w3-section"></div>
- 
-    <p> Assembling strategic narratives: Information operations as collaborative work within an online community.</p>
-    <p> CSCW 2018 </p>
-    <p>Wilson, Tom, <b>Kaitlyn Zhou</b>, and Kate Starbird. <a href="cscw2018.pdf">PDF</a> </p>
-
-  <div class="w3-row-padding w3-center w3-section"></div> 
-        
-    <p> Centralized, parallel, and distributed information processing during collective sensemaking. <p>
-    <p> CHI 2017. </p>
-    <p>Krafft, Peter, <b>Kaitlyn Zhou</b>, Isabelle Edwards, Kate Starbird, and Emma S. Spiro. <a href="chi2017.pdf">PDF</a> </p>
-    
-  <div class="w3-row-padding w3-center w3-section"></div>    
-        
-    <p> Could this be true? I think so! Expressed uncertainty in online rumoring. </p>
-    <p> CHI 2016 </p>
-    <p>Starbird, Kate, Emma Spiro, Isabelle Edwards, <b>Kaitlyn Zhou</b>, Jim Maddock, and Sindhuja Narasimhan. <a href="chi2016.pdf">PDF</a> </p>
-
-  <div class="w3-row-padding w3-center w3-section"></div>
-
-</div>
-
-
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
 </script>
 
+
+  <!-- do not remove -->
+  <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
-
