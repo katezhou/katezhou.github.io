@@ -6,6 +6,9 @@ h4 {
   margin-top: 60px;
   margin-bottom: 60px; 
   text-align: left; }
+#news ul {
+  list-style-position: outside;
+  padding-left: 1.5rem; }
 .header img {
   border-radius: 12px; }
 .main-description h1 {
